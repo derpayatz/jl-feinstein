@@ -71,16 +71,12 @@ footer.page {
       width: 61%;
       float: left; } }
 
-.sidebar {
-  box-sizing: border-box; }
-  @media screen and (min-width: 60em) {
-    .sidebar {
-      width: 28%;
-      float: right; } }
-
 .column article {
   margin-top: 2rem;
   margin-bottom: 2rem; }
+
+.article-link {
+  text-align: right; }
 
 .masthead {
   margin-top: 0;
