@@ -61,7 +61,8 @@ body {
     clear: both; }
 
 footer.page {
-  text-align: right; }
+  text-align: center;
+  font-size: small; }
 
 .column {
   box-sizing: border-box; }
