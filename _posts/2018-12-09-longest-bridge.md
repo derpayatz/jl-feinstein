@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Longest Bridge"
+category: "Poetry"
 ---
 
 The longest bridge spans not two hundred miles,

@@ -45,6 +45,8 @@ markdown: kramdown
 plugins:
 #  - jekyll-feed
   - jekyll-responsive-image
+  - jekyll-category-pages
+
 include: ['_pages']
 
 # Serve Settings
@@ -77,3 +79,6 @@ responsive_image:
   output_path_format: assets/images/%{filename}-%{width}.%{extension}
   save_to_source: false
   cache: false
+
+jekyll-category-pages:
+  paginate: 2

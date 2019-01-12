@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Mr. Nice Guy"
+category: "Poetry"
 ---
 
 Listen to the lonesome plaintive cry
