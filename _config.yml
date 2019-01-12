@@ -1,5 +1,7 @@
 # Site Settings
 
+excerpt_separator: <!--more-->
+
 title: feinstein 
 tagline:
 description:
