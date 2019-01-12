@@ -22,6 +22,9 @@ social:
   - name: mastodon
     url: masto.jews.international/@
     handle: derpayatz
+  - name: twitter
+    url: twitter.com
+    handle: derpayatz
 
 # Theme Settings
 
