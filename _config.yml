@@ -7,14 +7,14 @@ defaults:
 
 
 baseurl: ""
-url: "feinstein.jews.international"
+url: "https://jl-feinstein.jews.international"
 
 date_format: "%B %d, %Y"
 
 # Author Settings
 
 author: J L Feinstein 
-email: feinstein@jews.international
+email: jl-feinstein@jews.international
 social:
   - name: facebook
     url: facebook.com/
