@@ -1,0 +1,70 @@
+# Site Settings
+
+title: feinstein 
+tagline:
+description:
+defaults:
+
+
+baseurl: ""
+url: "feinstein.jews.international"
+
+date_format: "%B %d, %Y"
+
+# Author Settings
+
+author: J L Feinstein 
+email: feinstein@jews.international
+social:
+  - name: facebook
+    url: facebook.com/
+    handle: jl.feinstein.50
+  - name: mastodon
+    url: masto.jews.international/@
+    handle: derpayatz
+
+# Theme Settings
+
+theme: "jekyll-theme-feinstein"
+collections:
+  sidebars:
+    output: false
+
+# Build Settings
+
+markdown: kramdown
+plugins:
+#  - jekyll-feed
+  - jekyll-responsive-image
+include: ['_pages']
+
+# Serve Settings
+
+host: 192.168.1.102
+port: 9001
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
+  - .git/
+  - README.md
+  
+# Plugin Settings
+
+responsive_image:
+  template: _includes/responsive-image.html
+  default_quality: 90
+  sizes:
+    - width: 480
+    - width: 960
+    - width: 1440
+  strip: true
+  output_path_format: assets/images/%{filename}-%{width}.%{extension}
+  save_to_source: false
+  cache: false
