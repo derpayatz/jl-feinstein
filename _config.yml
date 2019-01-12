@@ -1,7 +1,5 @@
 # Site Settings
 
-excerpt_separator: <!--more-->
-
 title: feinstein 
 tagline:
 description:
@@ -35,9 +33,15 @@ collections:
   sidebars:
     output: false
 
+# Markdown Settings
+
+kramdown:
+  hard_wrap: true
+
 # Build Settings
 
 markdown: kramdown
+
 plugins:
 #  - jekyll-feed
   - jekyll-responsive-image
