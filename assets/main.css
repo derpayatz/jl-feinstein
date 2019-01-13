@@ -75,9 +75,6 @@ footer.page {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.article-link {
-  text-align: right; }
-
 .masthead {
   margin-top: 0;
   margin-bottom: 0;
@@ -154,6 +151,27 @@ footer.page {
 .navicon {
   vertical-align: middle; }
 
+.post-list li {
+  display: block; }
+  .post-list li p:first-of-type {
+    margin-top: 0; }
+  .post-list li p:nth-last-of-type(2) {
+    margin-bottom: 0; }
+.post-list .post-title {
+  margin: 0; }
+.post-list .post-link, .post-list .post-date {
+  text-align: right;
+  font-size: 0.85rem; }
+.post-list li + li:before {
+  display: block;
+  content: "\f005\f005\f005";
+  text-align: center;
+  margin: 3rem auto;
+  font: normal normal normal 1.5rem/1 ForkAwesome;
+  letter-spacing: 2rem; }
+.post-list .excerpt {
+  margin: 0; }
+
 body {
   background-color: #0d0c0c; }
 
@@ -181,3 +199,6 @@ body {
       color: #cc6666; }
     .navigation a:hover, .navigation a:focus {
       color: #cc6666; }
+
+.post-list li + li:before {
+  color: #a11212; }
