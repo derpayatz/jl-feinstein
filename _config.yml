@@ -1,5 +1,7 @@
 # Site Settings
 
+excerpt_separator: </section>
+
 title: j.l. feinstein 
 tagline:
 description:
