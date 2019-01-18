@@ -7,11 +7,6 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-- type: directory
-  path: _sidebars
-  label: Sidebars
-  create: all
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
