@@ -1,0 +1,90 @@
+// Responsive header with CSS-only navigation and a social network bar
+@mixin nav-link-padding {
+  padding: 0 1rem 0 0;
+  &:last-child {
+    padding: 0;
+  }
+}
+
+.masthead {
+  @include bgfix;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  @media screen and (min-width: breakpoint('md')) {
+      position: sticky;
+      top: 0rem;
+      left: 0rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 1rem auto 1rem auto;
+    padding-top: 2.2rem;
+    @media screen and (min-width: breakpoint('md')) {
+      padding-top: unset;
+    }
+  }
+  p {
+    font-family: font-family('heading');
+    font-size: 1.5rem;
+    margin: 0 auto 2rem auto;
+  }
+}
+
+.navigation {
+  @include clearfix;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  position: fixed;
+  width: 100%;
+  top: 0rem;
+  left: 0rem;
+  @media screen and (min-width: breakpoint('md')) {
+    position: static;
+  }
+}
+
+// Start with collapsed version for mobile-first
+
+.sitelinks {
+  padding: 0;
+  margin: 0;
+  float: right;
+  text-align: right;
+  li {
+    display: none;
+    @media screen and (min-width: breakpoint('md')) { 
+      // expand at this breakpoint
+      @include nav-link-padding;
+      display: inline-block;
+    }
+  }
+  label { // the 'button' to open the menu
+    display: block;
+    @media screen and (min-width: breakpoint('md')) {
+      // not needed at this breakpoint
+      display: none !important;
+    }
+  }
+  input[type=checkbox] { // hide the checkbox itself
+    display: none;
+  }
+  input[type=checkbox]:checked ~ li { // when the button is clicked
+    display: block; // show the menu
+  }
+}
+
+.sociallinks {
+  float: left;
+  padding: 0;
+  margin: 0;
+  li {
+    @include nav-link-padding;
+    display: inline-block;
+  }
+}
+
+
+.navicon {
+  vertical-align: middle;
+}

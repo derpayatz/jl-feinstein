@@ -1,0 +1,36 @@
+// Breakpoint getter
+
+@function breakpoint($point) {
+  @return map-get($breakpoints, $point);
+}
+
+// Z-index getter
+
+@function z($layer) {
+  @return map-get($z-indexes, $layer);
+};
+
+// Color Getter
+
+@function color( $color, $mix ) {
+  @return map-get( map-get( $theme-colors, $color ), $mix );
+}
+
+// Font Getters
+
+@function font-url( $font ) {
+  @return map-get( map-get( $fonts, $font ), 'url' );
+}
+
+@function font-family( $font ) {
+  @return map-get( map-get( $fonts, $font ), 'face'), 
+    map-get( map-get( $fonts, $font ), 'fallback');
+}
+
+@function font-bold( $font ) {
+  @return map-get( map-get( $fonts, $font ), 'bold' );
+}
+
+@function font-black( $font ) {
+  @return map-get( map-get( $fonts, $font ), 'black' );
+}

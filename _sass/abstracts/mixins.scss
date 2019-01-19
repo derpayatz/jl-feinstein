@@ -1,0 +1,89 @@
+// General Utilities
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin bgfix {
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+// Color
+
+@mixin colors( 
+  $bg: null, 
+  $bg-alpha: 1, 
+  $hash: null, 
+  $hash-alpha: $bg-alpha,
+  $color: null, 
+  $anchor: null, 
+  $hover: null, 
+  $active: null,
+  $border: null
+) {
+  // This needs to be called using an argument list with key names, otherwise wild confusion may result.
+
+  @if $bg {
+    $bg: rgba($bg, $bg-alpha);
+    background-color: $bg;
+    @if $hash {
+      $hash: rgba($hash, $hash-alpha);
+      @include hash( $hash, $bg );
+    }
+  }
+  @if $color { color: $color; }
+  @if $anchor {
+    a {
+      color: $anchor;
+      @if $active {
+        &.active {
+          color: $active
+        }
+      }
+      @if $hover {
+        &:hover, &:focus {
+          color: $hover;
+        }
+      }
+    }
+  }
+  @if $border { border-color: $border }
+}
+
+@mixin hash( $bg, $hash ) {
+  $gradient: 45deg, $bg 5%, $hash 5%, $hash 45%, $bg 45%, $bg 55%, $hash 55%, $hash 95%, $bg 95%;
+  background: linear-gradient($gradient);
+  background-size: 5px 5px;
+}
+
+// Layout
+
+@mixin page-width {
+  width: 100%;
+  margin: auto;
+  @media only screen and (min-width: breakpoint('xl')) {
+    // switch to fixed width layout, because it's not getting any wider
+    max-width: ( breakpoint('xl') / 1em * 1rem ); // switch to rems
+  }
+}
+
+@mixin page-horizontal-margins {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@mixin column-vertical-margins {
+  margin-top: 6vw;
+  margin-bottom: 12vw;
+}
+
+@mixin column-max-width {
+  max-width: 40rem;
+}

@@ -1,0 +1,51 @@
+// Breakpoints
+
+$breakpoints: (
+  'sm': 25em,
+  'md': 40em,
+  'lg': 60em,
+  'xl': 90em,
+);
+
+// Z-indexes
+
+$z-indexes: (
+  'background': -1,
+  'default': 1,
+  'modal': 5000
+);
+
+// Typography
+
+$text-line-height: 1.6 !default;
+$heading-line-height: 1.2 !default;
+
+$font-body-url: 'https://fonts.googleapis.com/css?family=Proza+Libre' !default;
+$font-body-face: 'Proza Libre' !default;
+$font-body-fallback: 'sans-serif' !default;
+$font-body-bold: 'bold' !default;
+$font-body-black: 'black' !default;
+
+$font-heading-url: 'https://fonts.googleapis.com/css?family=Vollkorn' !default;
+$font-heading-face: 'Vollkorn' !default;
+$font-heading-fallback: 'serif' !default;
+$font-heading-bold: 'bold' !default;
+$font-heading-black: 'black' !default;
+
+$fonts: (
+  'body': (
+    'url': $font-body-url,
+    'face': $font-body-face,
+    'fallback': $font-body-fallback,
+    'bold': $font-body-bold,
+    'black': $font-body-black
+  ),
+
+  'heading': (
+    'url': $font-heading-url,
+    'face': $font-heading-face,
+    'fallback': $font-heading-fallback,
+    'bold': $font-heading-bold,
+    'black': $font-heading-black
+  )
+)

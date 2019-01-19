@@ -1,0 +1,17 @@
+body {
+  @include page-width;
+}
+
+.page {
+  @include bgfix;
+  @include clearfix;
+  @include page-horizontal-margins;
+}
+
+.column {
+  box-sizing: border-box;
+  @media screen and (min-width: breakpoint('lg')) {
+    width: 61%;
+    float: left;
+  }
+}

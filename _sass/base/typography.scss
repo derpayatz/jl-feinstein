@@ -1,0 +1,65 @@
+// Import Google Fonts
+
+@import url(font-url('heading'));
+@import url(font-url('body'));
+
+// Mixins for font declarations
+
+// Heading typography
+
+%typography-heading {
+  line-height: $heading-line-height;
+  font-family: font-family('heading');
+  font-weight: font-black('heading');
+  a {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 2.2rem;
+  @extend %typography-heading;
+}
+
+h2 {
+  font-size: 2rem;
+  @extend %typography-heading;
+}
+
+h3 {
+  font-size: 1.8rem;
+  @extend %typography-heading;
+}
+
+h4 {
+  font-size: 1.6rem;
+  @extend %typography-heading;
+}
+
+h5 {
+  font-size: 1.4rem;
+  @extend %typography-heading;
+}
+
+h6 {
+  font-size: 1.2rem;
+  @extend %typography-heading;
+}
+
+// Body Typography
+
+body {
+  font-size: 1.2em;
+  font-family: font-family('body');
+}
+
+p {
+  line-height: $text-line-height;
+}
+
+blockquote {
+  font-size: 1.4rem;
+  p {
+    line-height: $text-line-height * 1.2;
+  }
+}

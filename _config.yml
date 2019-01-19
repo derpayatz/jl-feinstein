@@ -28,13 +28,6 @@ social:
     url: twitter.com/
     handle: derpayatz
 
-# Theme Settings
-
-theme: "jekyll-theme-feinstein"
-collections:
-  sidebars:
-    output: false
-
 # Markdown Settings
 
 kramdown:
@@ -45,15 +38,16 @@ kramdown:
 markdown: kramdown
 
 plugins:
-#  - jekyll-feed
+  - jekyll-feed
   - jekyll-responsive-image
   - jekyll-category-pages
+  - jekyll-paginate
 
 include: ['_pages']
 
 # Serve Settings
 
-host: 192.168.1.102
+host: localhost
 port: 9001
 
 exclude:

@@ -1,0 +1,83 @@
+// Red-Black Theme
+
+// Theme Colors:
+
+$theme-colors: (
+  grayscale: (
+    black: hsl( 0, 5, 5 ),
+    dark: hsl( 0, 5, 15 ),
+    white: hsl( 0, 5, 90 )
+  ),
+
+  primary: ( // Reddish Black hues
+    dark: hsl(0, 50, 20 ),
+    medium-dark: hsl( 0, 50, 30 ),
+    medium: hsl( 0, 50, 45 ),
+    medium-light: hsl(0, 50, 60 ),
+    light: hsl(0, 50, 80 )
+  ),
+
+  secondary: ( // Red hues
+    dark: hsl(360, 90, 15 ),
+    medium: hsl(360, 80, 35 ),
+    light: hsl(360, 100, 90 )
+  ),
+);
+
+// Theme Settings:
+
+
+// Theme Styles:
+
+$body-colors: (
+  'bg': color( grayscale, black )
+);
+
+$page-colors: (
+  'color': color( primary, light ), 
+  'anchor': color( primary, medium-light ), 
+  'hover': color( secondary, medium )
+);
+
+$masthead-colors: (  
+  'bg': color( grayscale, black ),
+  'color': color( primary, light ),
+  'anchor': color( primary, light ),
+  'hover': color( primary, medium ) 
+);
+
+$navigation-colors: (
+  'bg': color( secondary, dark ),
+  'color': color( primary, light ), 
+  'anchor': color( primary, light ), 
+  'hover': color( primary, medium-light ), 
+  'active': color( primary, medium-light )
+);
+
+$footer-colors: (
+  'border': color(secondary, dark)
+);
+
+body {
+  @include colors( $body-colors... );
+  }
+
+.page {
+  @include colors( $page-colors... );
+}
+
+.masthead {
+  @include colors( $masthead-colors... );
+}
+
+.navigation {
+  @include colors( $navigation-colors... );
+}
+
+footer.page {
+  @include colors( $footer-colors... );
+}
+
+%separator {
+  color: color( secondary, medium );
+}

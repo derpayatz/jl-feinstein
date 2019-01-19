@@ -1,0 +1,20 @@
+<ul class="column post-list">
+  {%- for post in posts -%}
+  <li id="{{ post.title }}">
+    <header>
+      <h2 class="post-title">
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}</a>
+      </h2>
+      <p class="post-date">
+        {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
+        {{ post.date | date: date_format }}
+      </p>
+    </header>
+    {{ post.excerpt | strip }}
+    <p class="post-link">
+      <a href="{{ post.url | relative_url }}">continue reading…</a>
+    </p>
+  </li>
+  {%- endfor -%}
+</ul>

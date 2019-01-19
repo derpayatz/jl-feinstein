@@ -1,0 +1,47 @@
+<header class="masthead">
+  <a id="skip-to-content" class="sr-only sr-only-focus" href="#content">Skip to Content</a>
+    <h1 class="page"><a href="{{ site.baseurl | prepend: site.url }}">{{ site.title }}</a></h1>
+    {%- if site.tagline -%}
+      <p>{{ site.tagline }}</p>
+    {%- endif -%}
+    
+
+<nav class="navigation page">
+  <h2 class="sr-only">Main Navigation Menu</h2>
+  <h3 class="sr-only">Social Media</h3>
+  <ul class="sociallinks">
+    {%- for service in site.social -%}
+      {%- for icon in site.data.socialicons -%}
+        {%- if service.name == icon.name -%}
+    <li><a href="https://{{ service.url }}{{ service.handle | cgi_escape | escape }}" rel="me">
+      <span class="navicon fa fa-{{ icon.fa }}" aria-hidden="true"></span>
+      <span class="sr-only">{{ service.name }}</span>
+    </a></li>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    <li><a href="{{ site.baseurl | prepend: site.url }}/{%- link feed.xml -%}">
+      <span class="navicon fa fa-rss" aria-hidden="true"></span>
+      <span class="sr-only">RSS Feed</span>
+    </a></li>
+  </ul>
+  <h3 class="sr-only">Site Navigation</h3>
+  <ul class="sitelinks">
+    <label for="navigation-expand-links"><span class="navbutton fa fa-bars" aria-hidden="true"></span></label>
+    <input type="checkbox" id="navigation-expand-links" role="button">
+    <li><a {% if page.url == "/" %} class="active"{% endif %} href="{{ site.baseurl | prepend: site.url }}/">
+      <span>Home</span>
+      {%- if page.url == "/" -%}<span class="sr-only">(current)</span>{%- endif -%}
+    </a></li>
+    {%- assign nav_pages = site.pages | sort: 'nav_weight' -%}
+    {%- for current in nav_pages -%}
+    {%- if current.title -%}
+    <li><a {% if page.url == current.url %} class="active" {% endif %} href="{{ current.url | prepend: site.baseurl | prepend: site.url }}">
+      <span>{{ current.title }}</span>
+    </a></li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</nav>
+
+</header>
