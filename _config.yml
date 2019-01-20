@@ -33,7 +33,7 @@ defaults:
     scope:
       type: "posts"
     values:
-      layout: "poetry"
+      layout: "post"
 
 # Markdown Settings
 
