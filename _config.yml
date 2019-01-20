@@ -1,7 +1,5 @@
 # Site Settings
 
-excerpt_separator: </section>
-
 title: j.l. feinstein 
 tagline:
 description:
@@ -27,11 +25,20 @@ social:
   - name: twitter
     url: twitter.com/
     handle: derpayatz
+    
+# Front Matter Defaults
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "poetry"
 
 # Markdown Settings
 
 kramdown:
-  hard_wrap: true
+#  hard_wrap: true
 
 # Build Settings
 
