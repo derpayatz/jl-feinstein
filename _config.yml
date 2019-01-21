@@ -75,9 +75,9 @@ responsive_image:
   template: _includes/responsive-image.html
   default_quality: 90
   sizes:
-    - width: 480
-    - width: 960
-    - width: 1440
+    - width: 320
+    - width: 512
+    - width: 768
   strip: true
   output_path_format: assets/images/%{filename}-%{width}.%{extension}
   save_to_source: false

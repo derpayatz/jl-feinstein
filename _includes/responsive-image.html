@@ -3,5 +3,12 @@
     {{ site.baseurl }}/{{ i.path }} {{ i.width }}w,
   {%- endfor -%}
 {%- endcapture -%}
+{%- capture sizes -%}
+  {%- if class contains 'inline' -%}
+    (min-width: 40em) 26.7vw, (min-width: 60em) 16.3vw, 48.8vw
+  {%- else -%}
+    (min-width: 60em) 48.8vw, 80vw
+  {%- endif -%}
+{%- endcapture -%}
 
-<img src="{{ site.baseurl }}/{{ resized[1].path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines |  }}" {% if title %} title="{{ title }}" {% endif %} >
+<img src="{{ site.baseurl }}/{{ resized[1].path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines |  }}" {% if title %} title="{{ title }}" {% endif %} sizes="{{ sizes }}" {% if class %} class="inline" {% endif %}>

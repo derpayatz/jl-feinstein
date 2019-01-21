@@ -4,5 +4,6 @@ body, .page {
 }
 
 p {
+  @include clearfix;
   margin: 1.5rem 0;
 }

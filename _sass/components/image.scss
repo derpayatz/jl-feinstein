@@ -1,0 +1,14 @@
+img.inline {
+  float: left;
+  width: 100%;
+  margin: 0 1.5rem 1.5rem 0;
+  @media screen and (min-width: breakpoint('md')) {
+    width: 33%;
+    float: left;
+  }
+}
+
+// column size at lg: 48.8vw
+// column size at md and below: 80vw
+// breakpoints: 400px, 640px, 960px, 1440px
+// image sizes at full column, at each breakpoint: 320, 512, 470, 703
