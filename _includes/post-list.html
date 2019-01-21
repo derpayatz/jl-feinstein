@@ -1,20 +1,23 @@
-<ul class="column post-list">
-  {%- for post in posts -%}
-  <li id="{{ post.title }}">
-    <header>
+<section id="post-list" class="column">
+  <h1>{%- if page.title -%}{{ page.title }}{%- else -%}Posts{%- endif -%}</h1>
+  <ul class="column post-list">
+  {%- for post in site.posts -%}
+    <li id="{{ post.title }}">
+      <header>
       <h2 class="post-title">
         <a href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}</a>
+        {{ post.title | escape }}</a>
       </h2>
       <p class="post-date">
         {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
         {{ post.date | date: date_format }}
       </p>
-    </header>
-    {{ post.excerpt | strip }}
-    <p class="post-link">
+      </header>
+      {{ post.excerpt | strip }}
+      <p class="post-link">
       <a href="{{ post.url | relative_url }}">continue reading…</a>
-    </p>
-  </li>
+      </p>
+    </li>
   {%- endfor -%}
-</ul>
+  </ul>
+</section>
