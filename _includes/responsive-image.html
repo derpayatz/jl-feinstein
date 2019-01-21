@@ -4,4 +4,4 @@
   {%- endfor -%}
 {%- endcapture -%}
 
-<img src="{{ site.baseurl }}/{{ resized[1].path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines |  }}">
+<img src="{{ site.baseurl }}/{{ resized[1].path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines |  }}" {% if title %} title="{{ title }}" {% endif %} >
