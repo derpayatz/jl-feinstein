@@ -85,3 +85,4 @@ responsive_image:
 
 jekyll-category-pages:
   paginate: 2
+  category_path: category
