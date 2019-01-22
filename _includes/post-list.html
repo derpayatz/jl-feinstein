@@ -1,6 +1,6 @@
 <section id="post-list" class="column">
   <h1>{%- if page.title -%}{{ page.title }}{%- else -%}Posts{%- endif -%}</h1>
-  <ul class="column post-list">
+  <ul class="post-list">
   {%- for post in site.posts -%}
     <li id="{{ post.title }}">
       <header>
@@ -8,15 +8,18 @@
         <a href="{{ post.url | relative_url }}">
         {{ post.title | escape }}</a>
       </h2>
-      <p class="post-date">
-        {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
-        {{ post.date | date: date_format }}
-      </p>
+      <p class="post-date">{%- capture category_path -%}
+        {{ site.jekyll-category-pages.category_path }}/{{ post.category }}
+        {% endcapture %}
+        Posted in 
+        <a href="{{ category_path | relative_url }}">{{ post.category }}</a>
+        on 
+        {% assign date_format = site.date_format | default: "%B %d, %Y" %} 
+        {{ post.date | date: date_format }}</p>
       </header>
       {{ post.excerpt | strip }}
       <p class="post-link">
-      <a href="{{ post.url | relative_url }}">continue reading…</a>
-      </p>
+        <a href="{{ post.url | relative_url }}">continue reading…</a></p>
     </li>
   {%- endfor -%}
   </ul>
