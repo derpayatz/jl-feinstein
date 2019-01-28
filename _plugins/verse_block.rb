@@ -25,7 +25,7 @@ module Jekyll
                 if /\S/ !~ line # is blank
                     next
                 else
-                    md = "#{md}<span>#{line}</span>"
+                    md = "#{md}<span>#{line} </span>"
                 end            
                 if (!line[verse.last])
                     md = "#{md}#{newline}"
