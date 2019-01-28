@@ -1,3 +1,13 @@
 ---
-layout: page 
+layout: default 
 ---
+<article class="column h-entry">
+  <header>
+    <h1 class="p-name">{{ page.title | escape }}</h1>
+    {% assign post = page %}
+    {% include post-meta.html %}
+  </header>
+  <section class="e-content">
+    {{ page.content }}
+  </section>
+</article>

@@ -1,37 +1,35 @@
-.post-list {
-  li {
-    display: block;
-    
-    p:first-of-type {
-      margin-top: 0;
-    }
-    p:nth-last-of-type(2) {
-      margin-bottom: 0;
-    }
-  }
-  
-  .post-title {
-    margin: 0;
-  }
-  
-  .post-link, .post-date {
-    text-align: right;
-    font-size: 0.85rem;
-  }
-  
-  li + li:before {
-    display: block;
-    content: "\f005\f005\f005";
-    text-align: center;
-    margin: 3rem auto;
-    font: normal normal normal 1.5rem/1 ForkAwesome;
-    letter-spacing: 2rem;
+#post-list {
+  margin-top: 0;
+  &:before {
     @extend %separator;
   }
+    
+  h1 {
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    border-bottom: 2px solid;
+  }
   
-  .excerpt {
-    margin: 0;
+  ul {
+    padding: 0;
+    
+    li {
+      display: block;
+    }
+    
+    li + li:before {
+      margin: 3rem auto;
+      @extend %separator;
+    }
   }
 }
 
-
+%separator {
+  display: block;
+  content: "\f005\f005\f005";
+  text-align: center;
+  font: normal normal normal 1.5rem/1 ForkAwesome;
+  letter-spacing: 2rem;
+  margin-right: -2rem; // compensate for spacing of last character
+  @include separator-color;
+}

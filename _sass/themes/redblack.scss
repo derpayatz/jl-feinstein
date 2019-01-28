@@ -36,7 +36,8 @@ $body-colors: (
 $page-colors: (
   'color': color( primary, light ), 
   'anchor': color( primary, medium-light ), 
-  'hover': color( secondary, medium )
+  'hover': color( secondary, medium ),
+  'border': color( primary, medium-light )
 );
 
 $masthead-colors: (  
@@ -78,6 +79,6 @@ footer.page {
   @include colors( $footer-colors... );
 }
 
-%separator {
+@mixin separator-color {
   color: color( secondary, medium );
 }
