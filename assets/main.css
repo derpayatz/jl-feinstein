@@ -1,3 +1,7 @@
+/*
+$footer-colors: (
+  'border': color( secondary, dark )
+);*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:500,900");
 @import url("https://fonts.googleapis.com/css?family=Proza+Libre");
 body {
@@ -29,9 +33,10 @@ body {
     .navigation a:hover, .navigation a:focus {
       color: #cc6666; }
 
+/*
 footer.page {
-  border-color: #490404; }
-
+  @include colors( $footer-colors... );
+}*/
 body, .page {
   margin: 0;
   overflow: auto; }
@@ -114,8 +119,8 @@ body {
   .column p:last-of-type {
     margin-bottom: 0; }
   .column .meta {
-    padding-left: 0.5rem;
-    margin: 0.75rem 0.5rem !important;
+    padding: 0 1rem;
+    margin: 0.75rem 0 !important;
     font-size: 0.85rem; }
     .column .meta span {
       display: block; }
@@ -124,14 +129,13 @@ body {
     @media screen and (min-width: 40em) {
       .column .meta {
         text-align: right;
-        padding: 0;
-        margin: 0 0 1.5rem 0 !important;
-        border: none; }
+        padding: 0; }
         .column .meta span {
           display: inline; }
         .column .meta .separator {
           display: inline;
-          padding: 0 .5rem; } }
+          padding: 0 .5rem;
+          color: #a11212; } }
 
 .masthead {
   margin-top: 0;
@@ -214,7 +218,7 @@ body {
   #post-list h1 {
     padding-bottom: 1rem;
     margin-top: 2rem;
-    border-bottom: 2px solid; }
+    /*     border-bottom: 2px solid; */ }
   #post-list ul {
     padding: 0; }
     #post-list ul li {
@@ -242,7 +246,8 @@ footer.page {
   font-size: small;
   margin: 1rem 0;
   padding: 1rem 0;
-  border-top: solid 2px; }
+  border-top: solid 3px;
+  border-color: #490404; }
 
 img.inline {
   float: left;
