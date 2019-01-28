@@ -20,7 +20,7 @@
         {%- endif -%}
       {%- endfor -%}
     {%- endfor -%}
-    <li><a href="{{ site.baseurl | prepend: site.url }}/{%- link feed.xml -%}">
+    <li><a href="{{ site.baseurl | prepend: site.url }}{%- link feed.xml -%}">
       <span class="navicon fa fa-rss" aria-hidden="true"></span>
       <span class="sr-only">RSS Feed</span>
     </a></li>
