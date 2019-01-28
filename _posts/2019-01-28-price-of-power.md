@@ -1,6 +1,6 @@
 ---
 title: The Price of Power
-category: Poetry
+category: Prose
 ---
 
 It is not an easy thing, to scramble and climb an entire stinking, slippery, steaming shit mountain. To brave bogs of excrement, wade through drifts of dreck, scramble past flatulent geysers, that eructate brimstone and fecal ærosols that seep into your every pore, coat your throat with their septic humors, and settle in the former pinkness of your lungs to fester and rot…
