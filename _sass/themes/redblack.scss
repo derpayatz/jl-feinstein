@@ -54,10 +54,10 @@ $navigation-colors: (
   'hover': color( primary, medium-light ), 
   'active': color( primary, medium-light )
 );
-
+/*
 $footer-colors: (
-  'border': color(secondary, dark)
-);
+  'border': color( secondary, dark )
+);*/
 
 body {
   @include colors( $body-colors... );
@@ -74,11 +74,15 @@ body {
 .navigation {
   @include colors( $navigation-colors... );
 }
-
+/*
 footer.page {
   @include colors( $footer-colors... );
-}
+}*/
 
 @mixin separator-color {
   color: color( secondary, medium );
+}
+
+@mixin footer-border-color {
+  border-color: color( secondary, dark);
 }
