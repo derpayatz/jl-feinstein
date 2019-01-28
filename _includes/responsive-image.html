@@ -11,4 +11,4 @@
   {%- endif -%}
 {%- endcapture -%}
 
-<img src="{{ site.baseurl }}/{{ resized[1].path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines |  }}" {% if title %} title="{{ title }}" {% endif %} sizes="{{ sizes }}" {% if class %} class="inline" {% endif %}>
+<img src="{{ site.baseurl }}/{{ resized[1].path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines |  }}" {% if title %} title="{{ title }}" {% endif %} sizes="{{ sizes }}" {% if class %} class="{{ class }}" {% endif %}>
