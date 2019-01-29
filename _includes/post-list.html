@@ -1,7 +1,7 @@
 <section id="post-list" class="column">
   <h1>{%- if page.title -%}{{ page.title }}{%- else -%}Posts{%- endif -%}:</h1>
   <ul>
-  {%- for post in site.posts -%}
+  {%- for post in posts -%}
     <li id="{{ post.title }}"><article class="h-entry">
       <header>
       <h2 class="p-name">
