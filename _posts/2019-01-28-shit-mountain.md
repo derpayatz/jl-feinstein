@@ -1,5 +1,5 @@
 ---
-title: The Price of Power
+title: Shit Mountain
 category: Prose
 ---
 
