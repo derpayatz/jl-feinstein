@@ -226,7 +226,7 @@ body {
     #post-list ul li + li:before {
       margin: 3rem auto; }
 
-#post-list:before, #post-list ul li + li:before {
+#post-list:not(:first-child):before, #post-list ul li + li:before {
   display: block;
   content: "\f005\f005\f005";
   text-align: center;
