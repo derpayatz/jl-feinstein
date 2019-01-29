@@ -1,6 +1,6 @@
 ---
 title: "Theory of Mind"
-category: "Poetry"
+category: "Verse"
 ---
 {% verse %}
 Humans are confusing beasts.

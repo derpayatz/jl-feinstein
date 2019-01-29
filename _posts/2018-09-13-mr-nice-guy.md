@@ -1,6 +1,6 @@
 ---
 title:  "Mr. Nice Guy"
-category: "Poetry"
+category: "Verse"
 ---
 {% verse %}
 Listen to the lonesome plaintive cry

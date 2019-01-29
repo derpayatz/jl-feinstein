@@ -1,6 +1,6 @@
 ---
 title:  "The Longest Bridge"
-category: "Poetry"
+category: "Verse"
 ---
 {% verse %}
 The longest bridge spans not two hundred miles,

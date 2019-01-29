@@ -1,6 +1,6 @@
 ---
 title:  "The Alchemy of Loss"
-category: "Poetry"
+category: "Verse"
 ---
 {% verse %}
 Such a bitter alchemist is loss,
