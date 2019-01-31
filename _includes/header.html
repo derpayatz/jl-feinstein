@@ -13,7 +13,7 @@
     {%- for service in site.social -%}
       {%- for icon in site.data.socialicons -%}
         {%- if service.name == icon.name -%}
-    <li><a href="https://{{ service.url }}{{ service.handle | cgi_escape | escape }}" rel="me">
+    <li><a href="https://{{ service.url }}{{ service.handle | cgi_escape | escape }}" rel="me" title="{{ service.name }}">
       <span class="navicon fa fa-{{ icon.fa }}" aria-hidden="true"></span>
       <span class="sr-only">{{ service.name }}</span>
     </a></li>
