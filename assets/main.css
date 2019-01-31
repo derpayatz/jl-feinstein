@@ -33,6 +33,13 @@ body {
     .navigation a:hover, .navigation a:focus {
       color: #cc6666; }
 
+#post-list h2 a {
+  color: #e6b3b3; }
+  #post-list h2 a:hover, #post-list h2 a:focus {
+    color: #ac3939; }
+  #post-list h2 a.active {
+    color: #ac3939; }
+
 /*
 footer.page {
   @include colors( $footer-colors... );
