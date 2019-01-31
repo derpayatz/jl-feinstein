@@ -54,6 +54,7 @@ $navigation-colors: (
   'hover': color( primary, medium-light ), 
   'active': color( primary, medium-light )
 );
+
 /*
 $footer-colors: (
   'border': color( secondary, dark )
@@ -73,6 +74,16 @@ body {
 
 .navigation {
   @include colors( $navigation-colors... );
+}
+
+#post-list {
+  h2 {
+    a {
+      color: color( primary, light );
+      &:hover, &:focus { color: color( primary, medium ); }
+      &.active { color: color( primary, medium ); }
+    }
+  }
 }
 /*
 footer.page {

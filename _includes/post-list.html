@@ -4,9 +4,9 @@
   {%- for post in posts -%}
     <li id="{{ post.title }}"><article class="h-entry">
       <header>
-      <h2 class="p-name">
+      <h2 class="p-name"><a href="{{ post.url | absolute_url }}" class="u-url">
         {{ post.title | escape }}
-      </h2>
+      </a></h2>
         {% include post-meta.html %}
       </header>
       <section class="p-summary">
