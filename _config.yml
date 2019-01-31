@@ -25,6 +25,9 @@ social:
   - name: twitter
     url: twitter.com/
     handle: derpayatz
+  - name: github
+    url: github.com/
+    handle: github
     
 # Front Matter Defaults
 
