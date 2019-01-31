@@ -16,18 +16,18 @@ date_format: "%B %d, %Y"
 author: J L Feinstein 
 email: jl-feinstein@jews.international
 social:
-  - name: facebook
-    url: facebook.com/
-    handle: jl.feinstein.50
-  - name: mastodon
-    url: masto.jews.international/@
-    handle: derpayatz
-  - name: twitter
-    url: twitter.com/
-    handle: derpayatz
-  - name: github
-    url: github.com/
-    handle: derpayatz
+  - name: Facebook
+    icon: facebook-square
+    url: facebook.com/jl.feinstein.50
+  - name: Mastodon
+    icon: mastodon-square
+    url: masto.jews.international/@derpayatz
+  - name: Twitter
+    icon: twitter-square
+    url: twitter.com/derpayatz
+  - name: Github
+    icon: github-square
+    url: github.com/derpayatz
     
 # Front Matter Defaults
 
