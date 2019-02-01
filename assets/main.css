@@ -233,6 +233,10 @@ body {
     #post-list ul li + li:before {
       margin: 3rem auto; }
 
+.read-more {
+  margin: .75rem 0;
+  padding-left: .75rem; }
+
 #post-list:not(:first-child):before, #post-list ul li + li:before {
   display: block;
   content: "\f005\f005\f005";
