@@ -5,4 +5,7 @@ footer.page {
   padding: 1rem 0;
   border-top: solid 3px;
   @include footer-border-color;
+  p {
+    margin: 0
+  }
 }
