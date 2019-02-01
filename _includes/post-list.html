@@ -10,9 +10,9 @@
         {% include post-meta.html %}
       </header>
       <section class="p-summary">
-        {{ post.excerpt | strip |>'}}
+        {{ post.excerpt }}
       </section>
-      <footer class="meta"><a href="{{ post.url | absolute_url }}" class="u-url">read more…</a></footer>
+      {% if post.content != post.excerpt %}<footer class="read-more"><a href="{{ post.url | absolute_url }}" class="u-url">read more…</a></footer>{% endif %}
     </article></li>
   {%- endfor -%}
   </ul>
