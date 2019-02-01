@@ -31,6 +31,8 @@ social:
     
 # Front Matter Defaults
 
+excerpt_separator: <!--more-->
+
 defaults:
   -
     scope:

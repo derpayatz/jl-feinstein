@@ -1,6 +1,7 @@
 ---
 title:  "Mr. Nice Guy"
 category: "Verse"
+excerpt-separator: ''
 ---
 {% verse %}
 Listen to the lonesome plaintive cry

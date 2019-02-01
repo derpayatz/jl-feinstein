@@ -1,6 +1,7 @@
 ---
 title: Where Is The Poison
 category: Verse
+excerpt-separator: ''
 ---
 {% verse %}
 Where is the poison?

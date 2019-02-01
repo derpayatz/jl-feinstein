@@ -1,6 +1,7 @@
 ---
 title:  "The Alchemy of Loss"
 category: "Verse"
+excerpt-separator: ''
 ---
 {% verse %}
 Such a bitter alchemist is loss,
@@ -12,7 +13,7 @@ into my limbs, weakening,
 into my eyes, dimming,
 into my throat, choking,
 into my tongue, parching,
-into my heart, muffling.
+into my heart, muffling.<!--more-->
 
 I have no breath to endure,
 I have no strength to hold on,

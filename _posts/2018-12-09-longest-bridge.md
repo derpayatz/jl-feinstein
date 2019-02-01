@@ -7,7 +7,7 @@ The longest bridge spans not two hundred miles,
 Across quick rivers, gulfs, or deep divides,
 Its graceful arches do not fly
 Between the earth and the sky;
-The longest bridge spans not two hundred miles.
+The longest bridge spans not two hundred miles.<!--more-->
 
 The hardest march goes not through snow and bog,
 It climbs no mountains through the rain and fog,
