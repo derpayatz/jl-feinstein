@@ -4,7 +4,7 @@ title: j.l. feinstein
 tagline:
 description:
 defaults:
-
+featuredimage: assets/images/jl.jpg
 
 baseurl: ""
 url: "https://jl-feinstein.jews.international"
@@ -30,6 +30,8 @@ social:
     url: github.com/derpayatz
     
 # Front Matter Defaults
+
+
 
 excerpt_separator: <!--more-->
 
