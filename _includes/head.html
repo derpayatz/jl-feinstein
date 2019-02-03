@@ -6,8 +6,8 @@
   {%- endcapture %}
   {%- capture url %}{{ page.url | absolute_url }}{%- endcapture %}
   {%- capture description %}
-  {%- if page.excerpt %}{{ page.excerpt }}
-  {%- else %}{% assign index = site.pages | where: "layout", "home" | first %}{{ index.content | truncate_words: 25 | markdownify | strip_html | strip }}
+  {%- if page.excerpt %}{{ page.excerpt | strip_html | strip }}
+  {%- else %}{% assign index = site.pages | where: "layout", "home" | first %}{{ index.content | strip_html | strip | truncatewords: 25 }}
   {%- endif %}{% endcapture %}
   
   <title>{{ title }}</title>
