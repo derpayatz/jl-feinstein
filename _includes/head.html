@@ -1,9 +1,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>{{ site.title }}{%- if page.title -%}—{{ page.title }}{%- endif -%}</title>
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {%- capture title %}{{ site.title }}
+  {%- if page.title -%}—{{ page.title }}{%- endif -%}
+  {%- endcapture %}
+  {%- capture url %}{{ page.url | absolute_url }}{%- endcapture %}
+  {%- capture description %}
+  {%- if page.excerpt %}{{ page.excerpt }}
+  {%- else %}{% assign index = site.pages | where: "layout", "home" | first %}{{ index.content | truncate_words: 25 | markdownify | strip_html | strip }}
+  {%- endif %}{% endcapture %}
+  
+  <title>{{ title }}</title>
+  <link rel="canonical" href="{{ url }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.0.11/css/fork-awesome.min.css" integrity="sha256-MGU/JUq/40CFrfxjXb5pZjpoZmxiP2KuICN5ElLFNd8=" crossorigin="anonymous">
   {% feed_meta %}
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ url }}" />
+  <meta property="og:image" content="{{ page.featuredimage | default: site.featuredimage | absolute_url }}" />
+  {%- if description %}
+  <meta property="og:description" content="{{ description }}" />
+  {%- endif %}
 </head>
