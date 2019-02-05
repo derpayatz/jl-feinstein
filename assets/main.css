@@ -114,17 +114,19 @@ body {
 .column {
   box-sizing: border-box;
   margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  /*  p:first-of-type {
+    margin-top: 0;
+    }
+    p:last-of-type {
+      margin-bottom: 0;
+    }*/ }
   @media screen and (min-width: 60em) {
     .column {
       width: 61%;
       float: left; } }
   .column h1, .column h2 {
     margin: 0; }
-  .column p:first-of-type {
-    margin-top: 0; }
-  .column p:last-of-type {
-    margin-bottom: 0; }
   .column .meta {
     padding: 0 1rem;
     margin: 0.75rem 0 !important;
