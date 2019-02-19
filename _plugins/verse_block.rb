@@ -11,6 +11,12 @@ module Jekyll
 
       def render(context)
         site = context.registers[:site]
+        converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
+          if Jekyll.configuration({})['kramdown']['hard_wrap']
+            newline = "\n"
+          else
+            newline = "<br \>\n"
+          end
         text = super(context).split("\n\n")
         text.map! do |verse|
           verse = verse.split("\n")
@@ -21,9 +27,10 @@ module Jekyll
               line = "<span>#{line} </span>"
             end
           end
-          verse = "<p class=\"verse\">#{verse.join("<br \>\n")}</p>"
+          verse = verse.join("<br \>\n")
+          verse = converter.convert("#{verse}{: .verse}")
         end
-        text.join("\n\n")
+        content = text.join("\n\n")
       end
     end
   end
