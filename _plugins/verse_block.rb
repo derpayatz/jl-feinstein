@@ -28,7 +28,7 @@ module Jekyll
             end
           end
           verse = verse.join("<br \>\n")
-          verse = converter.convert("#{verse}{: .verse}")
+          verse = converter.convert("#{verse}\n{: .verse}")
         end
         content = text.join("\n\n")
       end
