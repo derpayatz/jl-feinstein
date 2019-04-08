@@ -3,6 +3,7 @@ title: Jazz Joint
 category: Verse
 ---
 
+{% verse %}
 I sat at a table
 it was a hip little joint:
 low lights, cats in the corner
@@ -42,3 +43,4 @@ Maybe with the next gin and tonic,
 someone
 will sit at the table
 with me.
+{% endverse %}
