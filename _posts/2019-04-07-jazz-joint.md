@@ -7,7 +7,7 @@ I sat at a table
 it was a hip little joint:
 low lights, cats in the corner
 playing jazz, messengers
-from a different decade.
+from a different decade.<!--more-->
 
 I sat at the table,
 with my gin and tonic,
