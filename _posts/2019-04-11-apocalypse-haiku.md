@@ -5,7 +5,7 @@ category: Verse
 {% verse %}
 A great wall
 stone piled upon stone
-waiting to fall
+waiting to fall<!--more-->
 
 A dandelion
 growing in a bone dry pavement
@@ -17,7 +17,7 @@ a highway to the future
 
 A broken window
 in a street of broken windows
-you struggle to keep up
+it must end somewhere
 
 The windmill's lazy blades
 turn in the hilltop breeze, deceptively slow
