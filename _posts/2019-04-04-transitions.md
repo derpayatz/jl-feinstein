@@ -1,5 +1,5 @@
 ---
-title: The Transition of Incense
+title: Transitions
 category: Verse
 ---
 
