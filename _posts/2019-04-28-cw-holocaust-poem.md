@@ -1,5 +1,5 @@
 ---
-title: cw: holocaust poem
+title: "cw: holocaust poem"
 category: Verse
 ---
 
