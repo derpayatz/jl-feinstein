@@ -28,6 +28,6 @@ Never forget that summer, stolen
 chocolate and kisses, under a hot sun…
 
 Remember me! Though I was never born,
-and Grandpa never lived to shave
-and smoke and use eau-de-cologne.
+and Grandpa never lived to smoke
+and shave and use eau-de-cologne.
 {%endverse%}
