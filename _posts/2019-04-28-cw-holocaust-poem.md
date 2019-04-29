@@ -8,7 +8,7 @@ Remember, second-cousin
 the summer when I came to visit,
 when we were both fifteen?<!--more-->
 
-We used to people-watch commuters at the bus stop,
+We used to watch commuters at the bus stop,
 while the world went by, as we held hands
 and blushed together…
 
