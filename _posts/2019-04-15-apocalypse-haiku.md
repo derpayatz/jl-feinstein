@@ -19,10 +19,6 @@ A broken window
 in a street of broken windows
 it must end somewhere
 
-The windmill's lazy blades
-turn in the hilltop breeze, deceptively slow
-beside it, a library
-
 Dust motes dancing
 sparkling in a ray of light, they are 
 the only moving thing
@@ -43,13 +39,13 @@ neat rows of bones
 slowly returning to dust
 wood, steel, concrete
 
-Springtime flowers
-delicate and pink on the vines
-that grow in the rubble
+In springtime,
+delicate vines and flowers
+overwhelm the rubble
 
 Interstellar darkness
 reflected in a billion sunken eyes
-the people are hungry
+people are hungry
 
 Many sweating bodies
 strong brown arms, building and sowing
