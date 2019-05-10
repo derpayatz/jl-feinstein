@@ -14,7 +14,7 @@ and blushed together…
 
 Or when we stole candy from the corner store—
 that red-faced bourgeois
-caught us, but we were too fast.
+almost caught us, but we were too fast.
 
 Remember how one week my grandpa came,
 thick and heavy like his glasses, he smelled
