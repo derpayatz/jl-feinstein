@@ -21,6 +21,4 @@ No wonder those slabs were there.
 
 I suppose it makes sense: we were, after all, celebrating the establishment of the State of Israel, something that could not have been done without the destruction of the place in whose ruins we were having a family feast.
 
-(For a list of JNF forests planet on the ruins of villages, visit https://www.zochrot.org/en/article/55963
-
-Zochrot, those who remember, is an Israeli NGO that does research on the 1948 ethnic cleansing of Palestine.)
+(For a list of JNF forests planet on the ruins of villages, visit [Zochrot](https://www.zochrot.org/en/article/55963), "those who remember," an Israeli NGO that does research on the 1948 ethnic cleansing of Palestine.)
