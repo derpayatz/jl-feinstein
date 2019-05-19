@@ -1,0 +1,7 @@
+{% assign path = post.picture %}
+{% assign picture-alt = post.picture-alt %}
+{% responsive_image_block %}
+  path: assets/images/{{ path }}
+  alt: {{ picture-alt }}
+  class: featured-image
+{% endresponsive_image_block %}

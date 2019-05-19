@@ -3,8 +3,11 @@ layout: default
 ---
 <article class="column h-entry">
   <header>
-    <h1 class="p-name">{{ page.title | escape }}</h1>
     {% assign post = page %}
+    {% if post.picture %}
+      {% include post-picture.html %}
+    {% endif %}
+    <h1 class="p-name">{{ page.title | escape }}</h1>
     {% include post-meta.html %}
   </header>
   <section class="e-content">
