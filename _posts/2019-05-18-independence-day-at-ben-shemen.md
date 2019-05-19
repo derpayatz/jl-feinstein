@@ -13,7 +13,7 @@ So, fast forward ten or fifteen years. I was now living in the United States. I 
 
 In history class we learned a lot of facts about the Jewish National Fund. We learned how it was an institution set up to buy land for Jewish settlement during the Ottoman and British Mandate periods. We learned that it still managed a lot of land, and of course we also knew that it had planted those pine-tree forests all over the country, including the same one where I had eaten kebabs on Independence Day as a child.
 
-What we didn't learn was what had been on the site of those forests before the establishment of the State of Israel.
+What we didn't learn was what had been on the site of those forests before the Nakba.
 
 You see, like most JNF forests, Ben Shemen, where we celebrated Independence Day, was planted on the former site of 5 Palestinian villages: Jimzu, Dayr Abu Salama, Khirbat Zakariyya, Haditha, and Khirbat al-Duhayriyya. Those villages had been depopulated in 1948 by Zionist militias, as part of an organized campaign of ethnic cleansing during Israel's War of Independence.
 
