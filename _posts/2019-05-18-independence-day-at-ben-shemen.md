@@ -5,7 +5,7 @@ picture: ben-shemen.jpg
 picture-alt: Jewish National Fund forest at Ben Shemen
 ---
 
-So when I was growing up in Israel, I have a lot of interesting memories from those days. We used to go with the family to this forest near Jerusalem on Independence Day, to celebrate and grill shishliks and kebabs and relax among the trees. It was never my favorite thing to do—I'm not much of an outdoor type—so I don't really have a lot of memories from it. But I do remember the stones.
+So when I was growing up in Israel, I have a lot of interesting memories from those days. We used to go with the family to this forest near Jerusalem on Independence Day, to celebrate and grill shishliks and kebabs and relax among the trees. It was never my favorite thing to do—I'm not much of an outdoor type—so I don't really have a lot of memories from it. But I do remember the stones. <!--more-->
 
 There weren't very many, but the park's grills were made of big limestone slabs half-buried in the ground, and thick iron bars to put the food on. There were also rough benches made of limestone. I don't know why they made an impression on me; limestone is a very common building material in Israel.
 
