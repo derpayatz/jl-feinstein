@@ -13,3 +13,6 @@ end
 Jekyll::Hooks.register :documents, :pre_render do |post, payload|
     markdown_responsive_image post, payload
 end
+
+# use example:
+#![ alt text ]( path  "title"){: classes}
