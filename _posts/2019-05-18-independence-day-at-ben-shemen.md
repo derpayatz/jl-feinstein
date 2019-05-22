@@ -1,6 +1,6 @@
 ---
 title: Independence Day at Ben Shemen
-category: Prose
+category: Politics
 picture: ben-shemen.jpg
 picture-alt: Jewish National Fund forest at Ben Shemen
 ---
